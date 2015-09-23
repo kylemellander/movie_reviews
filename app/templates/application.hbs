@@ -3,13 +3,13 @@
     <div class="container">
       <div class="navbar-brand">Insert Blog Name Here</div>
       <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
+        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
       <div class="nav navbar-nav navbar-right">
         <ul class="nav navbar-nav">
-          <li><a href="/admin">Admin</a></li>
+          <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
         </ul>
       </div>
     </div>

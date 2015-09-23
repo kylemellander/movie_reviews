@@ -11,7 +11,8 @@
   <label for="author">Review Author</label>
   {{input value=author id="author"}}
 
-  <button {{action 'savePost'}}>Save</button>
+  <button {{action 'update' post}}>Edit</button>
 </form>
 
-{{yield}}
+
+<button {{action 'deletePost' post}}>Delete</button>
