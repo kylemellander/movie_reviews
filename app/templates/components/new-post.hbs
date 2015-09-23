@@ -1,0 +1,15 @@
+<form>
+  <label for="title">Title</label>
+  {{input value=title id="title"}}
+
+  <label for="text">Post</label>
+  {{textarea value=text id="text"}}
+
+  <label for="img">Movie Image</label>
+  {{input value=img id="img"}}
+
+  <label for="author">Review Author</label>
+  {{input value=author id="author"}}
+
+  <button {{action 'savePost'}}>Save</button>
+</form>
