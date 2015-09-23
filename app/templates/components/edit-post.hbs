@@ -1,18 +1,21 @@
-<form>
-  <label for="title">Title</label>
-  {{input value=title id="title"}}
+{{#if updatePost}}
+  <form>
+    <label for="update-title">Title</label>
+    {{input value=update-title id="update-title"}}
 
-  <label for="text">Post</label>
-  {{textarea value=text id="text"}}
+    <label for="update-text">Post</label>
+    {{textarea value=update-text id="update-text"}}
 
-  <label for="img">Movie Image</label>
-  {{input value=img id="img"}}
+    <label for="update-img">Movie Image</label>
+    {{input value=update-img id="update-img"}}
 
-  <label for="author">Review Author</label>
-  {{input value=author id="author"}}
+    <label for="update-author">Review Author</label>
+    {{input value=update-author id="update-author"}}
 
-  <button {{action 'update' post}}>Edit</button>
-</form>
-
+    <button {{action 'update' post}}>Edit</button>
+  </form>
+{{else}}
+  <button {{action 'showUpdatePost'}}>Update Post</button>
+{{/if}}
 
 <button {{action 'deletePost' post}}>Delete</button>

@@ -4,5 +4,11 @@
   "author": "smulloy21",
   "img": "http://www.allmysinsmovie.com/wp-content/uploads/2014/02/SWAMP-blog-movie-seats.jpg",
   "timestamp": "today"
-  }]
+  }, {
+    "title": "test",
+    "text": "test",
+    "author": "test",
+    "img": "http://www.allmysinsmovie.com/wp-content/uploads/2014/02/SWAMP-blog-movie-seats.jpg",
+    "timestamp": "today"
+    }]
 }

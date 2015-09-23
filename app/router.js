@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('admin');
+  this.route('edit-post');
 });
 
 export default Router;

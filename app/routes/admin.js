@@ -5,6 +5,11 @@ export default Ember.Route.extend({
     return this.store.findAll('post');
   },
   actions: {
+    savePost(params) {
+      var newPost = this.store.createRecord('post', params);
+      newPost.save();
+      this.transitionTo('admin');
+    },
     update(post, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
