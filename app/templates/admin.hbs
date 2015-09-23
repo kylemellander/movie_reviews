@@ -1,6 +1,6 @@
 {{new-post savePost='savePost'}}
-
+<ul class="list-group">
 {{#each model as |post|}}
-  {{post-tile post=post}}
-  {{edit-post post=post update='update' deletePost='deletePost'}}
+  {{admin-posts post=post tagName='li' class='list-group-item'}}
 {{/each}}
+</ul>
