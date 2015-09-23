@@ -1,6 +1,6 @@
 <div class="blog-container">
   <h3 class="post-title">
-    {{post.title}}<br>
+    {{#link-to 'edit-post' post}}{{post.title}}{{/link-to}}<br>
     <small>by {{post.author}}</small>
   </h3>
 
