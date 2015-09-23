@@ -1,13 +1,20 @@
-<div class="blog-container">
-  <h3 class="post-title">
-    {{#link-to 'edit-post' post}}{{post.title}}{{/link-to}}<br>
-    <small>by {{post.author}}</small>
-  </h3>
+{{#each sortedPosts as |post|}}
+  <div class="row">
+    <div class="col-sm-2">
+      <img src={{post.img}} class="img-responsive">
+    </div>
+    <div class="col-sm-10 review">
+      <div class="blog-container">
+        <h3 class="post-title">
+          {{post.title}}<br>
+          <small>by {{post.author}}</small>
+        </h3>
 
-  <div class="post-text">
-    {{post.text}}
+        <div class="post-text">
+          <p>{{dateString post.timestamp}}</p><br>
+          {{post.text}}
+        </div>
+      </div>
+    </div>
   </div>
-
-  <img src={{post.img}}>
-
-</div>
+{{/each}}

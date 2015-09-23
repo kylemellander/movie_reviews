@@ -1,6 +1,8 @@
 {{new-post savePost='savePost'}}
+
+<h3>Select the post you want to edit</h3>
 <ul class="list-group">
-{{#each model as |post|}}
-  {{admin-posts post=post tagName='li' class='list-group-item'}}
-{{/each}}
+  {{#each model as |post|}}
+    {{admin-posts post=post tagName='li' class='list-group-item'}}
+  {{/each}}
 </ul>

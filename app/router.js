@@ -8,6 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('admin');
   this.route('edit-post', {path: '/admin/post/:post_id'});
+  this.route('about');
+  this.route('contact');
 });
 
 export default Router;

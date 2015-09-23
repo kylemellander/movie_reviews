@@ -1,15 +1,24 @@
+<h3>New Post</h3>
 <form>
-  <label for="title">Title</label>
-  {{input value=title id="title"}}
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input value=title id="title" class="form-control"}}
+  </div>
 
-  <label for="text">Post</label>
-  {{textarea value=text id="text"}}
+  <div class="form-group">
+    <label for="text">Post</label>
+    {{textarea value=text id="text" class="form-control"}}
+  </div>
 
-  <label for="img">Movie Image</label>
-  {{input value=img id="img"}}
+  <div class="form-group">
+    <label for="img">Movie Image</label>
+    {{input value=img id="img" class="form-control"}}
+  </div>
 
-  <label for="author">Review Author</label>
-  {{input value=author id="author"}}
+  <div class="form-group">
+    <label for="author">Review Author</label>
+    {{input value=author id="author" class="form-control"}}
+  </div>
 
-  <button {{action 'savePost'}}>Save</button>
+  <button {{action 'savePost'}} class="btn btn-default">Save</button>
 </form>

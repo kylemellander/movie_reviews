@@ -1,0 +1,11 @@
+.post-title {
+  font-family: 'Montserrat', sans-serif;
+}
+.review {
+  height:245px;
+  overflow:hidden;
+}
+.blog-container {
+  height: 245px;
+  background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,1));
+}

@@ -8,10 +8,10 @@ export default Ember.Component.extend({
     },
     update(post) {
       var params = {
-        title: this.get('update-title'),
-        text: this.get('update-text'),
-        img: this.get('update-img'),
-        author: this.get('update-author'),
+        title: this.get('title'),
+        text: this.get('text'),
+        img: this.get('img'),
+        author: this.get('author'),
       };
       this.set('updatePost', false);
       this.sendAction('update', post, params);
