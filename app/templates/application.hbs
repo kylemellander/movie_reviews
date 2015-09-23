@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container-fluid">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">Insert Blog Name Here</div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/admin">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-{{outlet}}
+  <div class="container">
+    {{outlet}}
+  </div>
+</div>
