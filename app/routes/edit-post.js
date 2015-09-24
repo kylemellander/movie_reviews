@@ -15,6 +15,10 @@ export default Ember.Route.extend({
       this.transitionTo('edit-post', post);
     },
     deletePost(post) {
+      post.get('comments').forEach(function(comment) {
+        comment.destroyRecord();
+      });
+      debugger;
       post.destroyRecord();
       this.transitionTo('admin');
     }

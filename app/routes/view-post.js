@@ -12,7 +12,8 @@ export default Ember.Route.extend({
       var newComment = this.store.createRecord('comment', params);
       newComment.save();
       params.post.save();
-      this.transitionTo('view-post', post.post_id);
+      this.transitionTo('view-post');
+      window.location.reload();
     },
     updateComment(comment, params) {
       Object.keys(params).forEach(function(key) {
@@ -22,6 +23,10 @@ export default Ember.Route.extend({
       });
       comment.save()
       comment.post.save()
+      this.transitionTo('view-post', post);
+    },
+    deleteComment(comment) {
+      comment.destroyRecord();
       this.transitionTo('view-post', post);
     }
   }
