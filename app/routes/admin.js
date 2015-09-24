@@ -8,6 +8,7 @@ export default Ember.Route.extend({
     savePost(params) {
       var newPost = this.store.createRecord('post', params);
       newPost.save();
+      debugger;
       this.transitionTo('admin');
     },
     update(post, params) {
