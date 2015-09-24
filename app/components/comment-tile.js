@@ -4,12 +4,14 @@ export default Ember.Component.extend({
   showForm: false,
   actions: {
     saveComment() {
+      debugger;
       var params = {
         name: this.get('name'),
         body: this.get('body'),
         post: this.get('post'),
         timestamp: new Date()
       };
+      debugger;
       this.sendAction('saveComment', params);
     },
     showUpdateForm() {

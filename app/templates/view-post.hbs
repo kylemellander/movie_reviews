@@ -1,4 +1,4 @@
-{{post-tile post=model.post}}
-{{comment-tile comments=model.post.comments post=model.post saveComment="saveComment" updateComment="updateComment" deleteComment="deleteComment"}}
+{{post-tile post=model}}
+{{comment-tile comments=model.comments post=model saveComment="saveComment" updateComment="updateComment" deleteComment="deleteComment"}}
 
 {{#link-to 'index'}}<button class="btn btn-default pull-right">Back</button>{{/link-to}}

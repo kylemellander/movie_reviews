@@ -2,11 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(post) {
-    var foo = Ember.RSVP.hash({
-      post: this.store.findRecord('post', post.post_id),
-      comments: this.store.find('comment', {post: post})
-    });
-    return foo;
+    return this.store.findRecord('post', post.post_id);
   },
   // afterModel: function(model, transition) {
   //   if (model.get('length') === 2) {
