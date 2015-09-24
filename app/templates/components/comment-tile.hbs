@@ -4,3 +4,18 @@
     <p>{{comment.name}}</p>
   </div>
 {{/each}}
+
+<h3>Add a Comment</h3>
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    {{input value=name id="name" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="body">Comment</label>
+    {{textarea value=body id="body" class="form-control"}}
+  </div>
+
+  <button {{action 'saveComment' post}} class="btn btn-default">Comment</button>
+</form>
