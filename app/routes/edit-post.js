@@ -18,10 +18,8 @@ export default Ember.Route.extend({
       post.get('comments').forEach(function(comment) {
         comment.destroyRecord();
       });
-      debugger;
       post.destroyRecord();
       this.transitionTo('admin');
     }
   }
-
 });

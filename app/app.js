@@ -22,10 +22,4 @@ Ember.Handlebars.registerBoundHelper('dateString', function(string) {
   return dateString;
 });
 
-Ember.Handlebars.registerBoundHelper('sortedPosts', function(post) {
-  var sortedPosts = post.sortBy("timestamp");
-  debugger;
-  return sortedPosts;
-});
-
 export default App;
