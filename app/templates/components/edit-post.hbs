@@ -1,29 +1,24 @@
-{{#if updatePost}}
-  <form id="edit-form">
-    <div class="form-group">
-      <label for="title">Title</label>
-      {{input value=title id="title" class="form-control"}}
-    </div>
+<form id="edit-form">
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input value=title id="title" class="form-control"}}
+  </div>
 
-    <div class="form-group">
-      <label for="text">Post</label>
-      {{textarea value=text id="text" class="form-control"}}
-    </div>
+  <div class="form-group">
+    <label for="text">Post</label>
+    {{textarea value=text id="text" class="form-control"}}
+  </div>
 
-    <div class="form-group">
-      <label for="img">Movie Image</label>
-      {{input value=img id="img" class="form-control"}}
-    </div>
+  <div class="form-group">
+    <label for="img">Movie Image</label>
+    {{input value=img id="img" class="form-control"}}
+  </div>
 
-    <div class="form-group">
-      <label for="author">Review Author</label>
-      {{input value=author id="author" class="form-control"}}
-    </div>
+  <div class="form-group">
+    <label for="author">Review Author</label>
+    {{input value=author id="author" class="form-control"}}
+  </div>
 
-    <button {{action 'update' post}} class="btn btn-default">Edit</button>
-  </form>
-{{else}}
-  <button {{action 'showUpdatePost'}} class="btn btn-default">Update Post</button>
-{{/if}}
-
-<button {{action 'deletePost' post}} class="btn btn-danger">Delete</button>
+  <button {{action 'update' post}} class="btn btn-default">Edit</button>
+  <button {{action 'deletePost' post}} class="btn btn-danger">Delete</button>
+</form>
